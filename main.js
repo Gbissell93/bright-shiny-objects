@@ -1,11 +1,62 @@
 // ┌─────────────────┐
 // │ Your code here! │
 // └─────────────────┘
+let user = {};
+function createUser (first, last) {
+    first = user.firstName = first;
+    last = user.lastName = last;
+
+    return user
+};
 
 
+function setAge (obj, age) {
+    age = obj.age = age;
+    return obj
+}
 
+function incrementAge (obj) {
+    obj.age++
+    return obj
+}
 
+function fixCar (obj) {
+     obj.needsMaitenance = false;
+    return obj
+}
 
+let student = {
+    grades: []
+}
+
+function addGrades (student, newgrades) {
+   student.grades = student.grades.concat(newgrades)
+    return student
+}
+
+function getDataType (obj, key) {
+    return typeof obj.key
+}
+
+function addSong (playlist, song) {
+
+}
+
+function updateReportCard ( rc, ng) {
+    rc.grades.push(ng);
+    for (let i = 0; i < rc.grades.length; i++) {
+        if (rc.grades[i] < rc.grades[i]) {
+            rc.lowestGrade = rc.grades[i]
+        };
+        if (rc.grades[i] > rc.grades[i]) {
+            rc.higehestGrade = rc.grades[i]
+        };
+
+        
+
+        
+    }
+}
 
 
 
