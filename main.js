@@ -35,11 +35,19 @@ function addGrades (student, newgrades) {
 }
 
 function getDataType (obj, key) {
-    return typeof obj.key
+    return typeof obj[key]
+}
+
+function addTodo (todo, newTodo) {
+    todo.push(newTodo);
+    return todo
 }
 
 function addSong (playlist, song) {
+playlist.songs.push(song);
+playlist.duration += songs.duration;
 
+return playlist
 }
 
 function updateReportCard ( rc, ng) {
@@ -52,7 +60,7 @@ function updateReportCard ( rc, ng) {
             rc.higehestGrade = rc.grades[i]
         };
 
-        
+
 
         
     }
